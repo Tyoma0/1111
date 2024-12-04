@@ -1,21 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Skill = () => {
+
+type SkillPropsType = {
+    title: string
+    spanTitle: string
+    text:string
+}
+
+export const Skill = (props:SkillPropsType) => {
     return (
         
         <StyledSkill>
-                    
-                        <SkillTitle>React</SkillTitle>
-                        <SkillText>consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue</SkillText>                   
+                        <SkillNumber>{props.spanTitle}</SkillNumber>
+                        <SkillTitle>{props.title}</SkillTitle>
+                        <SkillText>{props.text}</SkillText>                   
                 
         </StyledSkill>
         
     );
 };
 
+const SkillNumber = styled.span`
+font-size:70px;
+`
+
 const StyledSkill =  styled.div`
-    
+    width:33%;
+    background-color:#9b7474;
+    margin:2px
 `
 
 const SkillTitle =  styled.h3`
