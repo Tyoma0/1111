@@ -10,11 +10,11 @@ import { Container } from '../../../components/Container';
             <Container>
             <FlexWrapper align='center' justify='space-between'>
             <Me>
-            <BigText>HELLO I’M Tyoma</BigText>
+            <BigText>HELLO <br/>I’M Tyoma</BigText>
             <Name>A Frontend Developer In Belarus</Name>
             </Me>  
-            <Kub><Photo src={photo} alt="" /></Kub>
-            
+            <Kub></Kub>
+            <Photo src={photo} alt="" />
           </FlexWrapper>
             </Container>         
            
@@ -25,37 +25,39 @@ import { Container } from '../../../components/Container';
 
 const Me = styled.div`
 position:relative;
+z-index:1;
 `
 
 const StyledMain  = styled.div`
     min-height:100vh;
     background-color:#FFFFFF;
     display: flex;
+    
 
 `
 const Kub = styled.div`
 
 background-color:#E7E7E7;
-position:relative;
-&::before{
-    content:'';
-    width:570px;
+right:90px;
+left:990px;
+
+width:570px;
 height:570px;
-transform:rotate(8.7deg);
+transform:rotate(-8.7deg);
 
 position:absolute;
-}
+
 
 `
 
 
 const  Photo= styled.img`
-position:relative;
-
-    
-    width:570px;
+position:absolute;
+right:90px;
+left:990px;    
+width:570px;
 height:570px;
-transform:rotate(-8.7deg);
+transform:rotate(8.7deg);
 
 
 

@@ -26,20 +26,18 @@ display: flex;
 align-items:center
 }
 a{
-    text-decoration:none;
-    color:#2D2C2C;
+    text-decoration:none;   
     font-size:16px;
+
 }
-header a:last-child{
-  color:#ffffff;
-  padding:8px 20px;
-}
+
 
 
 header li:last-child{
   background-color:#2D2C2C;
  border-radius:2px;
  transition: transform 0.5s ease-in-out;
+ 
 
 }
 header li:last-child:hover{
@@ -54,6 +52,10 @@ ul{
 button{
     background-color:unset;
     border:none
+}
+
+section{
+  padding:100px 0;
 }
 
 
