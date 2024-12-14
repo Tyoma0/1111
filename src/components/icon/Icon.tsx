@@ -1,20 +1,19 @@
 import React from 'react';
-import iconsSprite  from  '../../assets/images/myLogo 1.svg'
+import iconSprite from './../../assets/images/icons-sprite.svg'
 
-type IconOropsType = {
+type IconPropsType = {
     iconId:string
     width?:string
     height?:string
     viewBox?: string
 }
 
- export const Icon = (props:IconOropsType) => {
+ export const Icon = (props:IconPropsType) => {
     return (
-        
+        <svg fill="none" width='50' height='50' viewBox = '0 0 50 50'  xmlns="http://www.w3.org/2000/svg" >
+            <use xlinkHref={`${iconSprite}#${props.iconId}`}/>
+        </svg>
             
-        <svg width={props.width} height={props.height} viewBox={props.viewBox} fill="none" xmlns="http://www.w3.org/2000/svg">     
-<use xlinkHref={`${iconsSprite}#${props.iconId}`}/>
-</svg>
 
        
     );

@@ -20,6 +20,6 @@ import { Skill } from './skill/Skill';
 };
 
 const StyledSkills = styled.section`
-    background-color:#f89f9f;
+    background-color:#131212;
     min-height: 100vh;
 `

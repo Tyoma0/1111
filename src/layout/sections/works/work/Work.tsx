@@ -5,17 +5,16 @@ import styled from 'styled-components';
 type WorkPropsType = {
 title:string
 text:string
-src: string
+
 }
 
 export const Work = (props:WorkPropsType) => {
     return (
         <StyledWork>
-                <Image src={props.src} alt=""/>  
+                
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
                 <Link></Link>
-                
                 
 
         </StyledWork>
@@ -29,11 +28,7 @@ const StyledWork =  styled.div`
    
 ` 
 
-const Image = styled.img`
-   width:100%;
-    max-height:447px;
 
-`
 
 const Link = styled.a`
     

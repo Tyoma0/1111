@@ -4,7 +4,7 @@ import { Icon } from '../icon/Icon'
     return(
 <div>
 <a href="">
-    <Icon height='65' width='55'  viewBox='0  0 50 50' iconId={'pattern0_74106_10'}/>
+    <Icon height='65' width='55'  viewBox='0  0 50 50' iconId={'Instagram'}/>
 </a>
 </div>
     )

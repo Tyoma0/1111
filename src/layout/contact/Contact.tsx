@@ -21,7 +21,7 @@ export const Contact = () => {
 
  const StyleContact = styled.section`
     min-height:50vh;
-    background-color:#685763;
+    background-color:#ffffff;
     display: flex;
     justify-content:space-evenly;
    align-items:center;

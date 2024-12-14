@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { About } from './about/About';
-import fotoImage from './../../assets/images/images.jpg'
+import fotoImage from './../../assets/images/i.webp'
 
 export const AboutMe = () => {
     return (
@@ -14,7 +14,8 @@ export const AboutMe = () => {
 };
 
  const StyleAbout = styled.section`
-
+background-color:#131212;
+color:#ffff;
  `
 
  const SectionTitle  = styled.h2`
