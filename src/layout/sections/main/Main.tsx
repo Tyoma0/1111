@@ -2,19 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import photo from '..//../../assets/images/i.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper';
-
+import { Container } from '../../../components/Container';
 
  export const Main = () => {
     return (
-        <StyledMain>          
-            <FlexWrapper align='center' justify='space-around'>
+        <StyledMain> 
+            <Container>
+            <FlexWrapper align='center' justify='space-between'>
             <Me>
-            <span>HELLO I’M Tyoma</span>
-            <h1>A Frontend Developer</h1>
+            <BigText>HELLO I’M Tyoma</BigText>
+            <Name>A Frontend Developer In Belarus</Name>
             </Me>  
-            <Kub></Kub>
-            <Photo src={photo} alt="" />
+            <Kub><Photo src={photo} alt="" /></Kub>
+            
           </FlexWrapper>
+            </Container>         
+           
         </StyledMain>
     );
 };
@@ -22,30 +25,60 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 
 const Me = styled.div`
 position:relative;
-right:250px
 `
 
 const StyledMain  = styled.div`
     min-height:100vh;
     background-color:#FFFFFF;
-    position: relative;
     display: flex;
-    justify-content:space-evenly
+
 `
 const Kub = styled.div`
-width:570px;
-height:570px;
+
 background-color:#E7E7E7;
-transform:rotate(-7.56deg);
+position:relative;
+&::before{
+    content:'';
+    width:570px;
+height:570px;
+transform:rotate(8.7deg);
+
 position:absolute;
-right:50px
+}
+
 `
 
 
 const  Photo= styled.img`
-width:570px;
+position:relative;
+
+    
+    width:570px;
 height:570px;
-transform:rotate(7.56deg);
-position:absolute;
-right:50px
+transform:rotate(-8.7deg);
+
+
+
+
+
+
+`
+const BigText = styled.span`
+width: 651px;
+height: 352px;
+top: 222px;
+left: 189px;
+gap: 0px;
+opacity: 0px;
+font-family: 'Epilogue';
+font-size: 150px;
+font-weight: 800;
+line-height: 176.25px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+`
+const Name = styled.h1`
+
 `

@@ -12,7 +12,9 @@ import styled from 'styled-components';
     <ul>
 {props.menuItems.map((item,index)=>{
   return  <ListItem key={index}>
-    <Link href="">{item}</Link>
+    <Link href="">{item}
+    
+    </Link>
     </ListItem>
 })}
     </ul>
@@ -25,6 +27,7 @@ const  StyledHeaderMenu = styled.nav`
     ul{
         display: flex;
         gap:30px;
+        
     }
 `
 const ListItem = styled.li`
@@ -32,9 +35,12 @@ const ListItem = styled.li`
 `
 
 const  Link = styled.a`
-font-family:'Jesefin Sans',sans-serif ;
-font-weight:400;
-font-size:16px;
-text-align:center;
+font-family: 'Epilogue';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+text-underline-position: 'from-font';
+text-decoration-skip-ink: none;
 
 `
