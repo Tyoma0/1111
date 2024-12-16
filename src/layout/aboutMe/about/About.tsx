@@ -12,9 +12,8 @@ type AboutPropsType = {
 export const About = (props:AboutPropsType) => {
     return (
         <AboutDiv>
-            <Image src={props.src} alt="" />
             <Description>{props.text}</Description>
-            <Image src={props.src} alt="" />
+            <Image width={440} height={411} src={props.src} alt="" />
         </AboutDiv>
     );
 };
@@ -23,4 +22,17 @@ export const About = (props:AboutPropsType) => {
 
 const AboutDiv  = styled.div``
 const Image = styled.img``
-const Description = styled.p``
+const Description = styled.p`
+width: 437px;
+height: 540px;
+gap: 0px;
+opacity: 0px;
+
+font-family: 'Roboto';
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+
+
+`

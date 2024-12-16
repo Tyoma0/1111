@@ -31,7 +31,9 @@ a{
 
 }
 
-
+nav{
+  color:${theme.color.accent}
+}
 
 header li:last-child{
   background-color:#2D2C2C;

@@ -2,40 +2,64 @@ import React from 'react';
 import styled from 'styled-components';
 import { Menu } from '../../components/menu/Menu';
 import { Button } from '../../components/Buttom';
-
+import { Container } from '../../components/Container';
 const itemContact = ['Projects','About','Digital Assets']
 
 export const Contact = () => {
     return (
         <StyleContact>
-           <Menu menuItems={itemContact}></Menu> 
+            <Container>
+                <DivContact>
+                <Menu menuItems={itemContact}></Menu> 
            <StyledForm>
             <TitleForm>Subscribe to my emailing list</TitleForm>
            <Field placeholder='Enter your email'/>
-           <Button  type='submit'>Subscribe</Button>
+           <Button   type='submit'>Subscribe</Button>
            <StyledSpanContact>By subscribing you agree to with our Privacy Policy</StyledSpanContact>
            </StyledForm>
+                </DivContact>
+           
+            </Container>
+          
         </StyleContact>
     );
 };
 
- const StyleContact = styled.section`
-    min-height:50vh;
-    background-color:#ffffff;
+const DivContact  = styled.div`
     display: flex;
     justify-content:space-evenly;
    align-items:center;
-   
+   border-bottom:1px solid #000000;
+   width: Fixed 1,064px;
+height: Fixed 146px;
+gap: 377px;
+opacity: 0px;
+
+`
+
+
+ const StyleContact = styled.section`
+    min-height:50vh;
+    background-color:#ffffff;
+    
+    
  `
 
 const StyledForm = styled.form`
     max-width:500px;
     width:70%;
     gap: 20px;
+    font-family: 'Epilogue';
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+margin-top:92px
+
   
 `
 const Field = styled.input`
     padding:12px;
+    border:1px solid #000000;
     
 `
 
@@ -45,6 +69,7 @@ font-weight: 700;
 line-height: 24px;
 text-align: left;
 text-decoration-skip-ink: none;
+padding-bottom:16px;
 
 `
 
@@ -57,7 +82,7 @@ line-height: 18px;
 text-align: left;
 text-decoration-line: underline;
 text-decoration-style: solid;
-
 text-decoration-skip-ink: none;
-
+padding-top:16px;
+padding-bottom:76px
 `

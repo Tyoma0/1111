@@ -25,5 +25,9 @@ const  StylenMenu = styled.nav`
     ul{
         display: flex;
         gap:30px;
+        
+    }
+    a{
+        color:#000000
     }
 `
