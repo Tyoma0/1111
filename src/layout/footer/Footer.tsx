@@ -9,8 +9,8 @@ return(
 <StyletFooter>
 
     <Container>
-    
-      <CopyRight>2022 Relume. All right reserved.</CopyRight>
+        <DivHeader>
+        <CopyRight>2022 Relume. All right reserved.</CopyRight>
 
 
 <SocialList>
@@ -39,9 +39,11 @@ return(
          </SocialLink>
     </SocialItem>
   
-</SocialList>
-      
+</SocialList>      
 
+        </DivHeader>
+    
+     
     </Container>
      
 </StyletFooter>
@@ -49,14 +51,21 @@ return(
 
 }
 
+const DivHeader  = styled.div`
+    display: flex;
+    align-items:center;
+    justify-content:space-between
+`
+
 
 const StyletFooter =styled.footer`
     display: flex;
     background-color:#ffff;
+    
     `
 const SocialList =styled.ul`
     display: flex;
-    
+    margin-top:20px
 `
 const SocialItem =styled.li`
     
