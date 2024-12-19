@@ -4,7 +4,7 @@ import { Logo } from "../../components/logo/Logo";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { HeaderMenu } from "./headerMenu/HeaderMenu";
-
+import { MobileMenu } from "./mobileMenu/MobileMenu";
 
 const  items = ['Projects','About','Digital Assets','Let’s Talk']
 
@@ -18,6 +18,7 @@ const  items = ['Projects','About','Digital Assets','Let’s Talk']
                     
                
                 <HeaderMenu menuItems={items}/>
+                <MobileMenu menuItems={items}/>
                 </FlexWrapper>
             
             </Container>
