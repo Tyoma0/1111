@@ -15,7 +15,7 @@ export const Contact = () => {
             <TitleForm>Subscribe to my emailing list</TitleForm>
            <Field placeholder='Enter your email'/>
            <Button   type='submit'>Subscribe</Button>
-           <StyledSpanContact>By subscribing you agree to with our Privacy Policy</StyledSpanContact>
+           <StyledSpanContact>By subscribing you agree to with our <Span> Privacy Policy</Span> </StyledSpanContact>
            </StyledForm>
                 </DivContact>
            
@@ -24,6 +24,19 @@ export const Contact = () => {
         </StyleContact>
     );
 };
+
+const Span = styled.span`
+    
+font-family: 'Roboto';
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+text-decoration-line: underline;
+text-decoration-style: solid;
+
+`
+
 
 const DivContact  = styled.div`
     display: flex;
@@ -76,13 +89,17 @@ padding-bottom:16px;
 const StyledSpanContact = styled.span`
     display: flex;
     justify-content:start;
+padding-top:16px;
+padding-bottom:76px;
+gap: 4px;
+
+
+font-family: 'Roboto';
 font-size: 12px;
 font-weight: 400;
 line-height: 18px;
 text-align: left;
-text-decoration-line: underline;
-text-decoration-style: solid;
+text-underline-position: from-font;
 text-decoration-skip-ink: none;
-padding-top:16px;
-padding-bottom:76px
+
 `

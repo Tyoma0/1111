@@ -26,8 +26,13 @@ display: flex;
 align-items:center
 }
 a{
-    text-decoration:none;   
-    font-size:16px;
+ text-decoration:none;
+ font-family: 'Epilogue';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
 
 }
 
@@ -35,8 +40,10 @@ nav{
   color:${theme.color.accent}
 }
 
+
+
 header li:last-child{
-  background-color:#2D2C2C;
+  /* background-color:#2D2C2C; */
  border-radius:2px;
  transition: transform 0.5s ease-in-out;
  

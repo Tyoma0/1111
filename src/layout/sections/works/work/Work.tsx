@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 type WorkPropsType = {
 title:string
 text:string
 minInfo:string
 name:string
+
 }
 
 export const Work = (props:WorkPropsType) => {
@@ -43,15 +43,16 @@ const DivName = styled.div`
     display: flex;
     flex-direction:column;
     min-width:433px;
-    min-height:215px
+    min-height:215px;
+    
 `
 const StyledWork =  styled.div`
-    background-color:#4d6b57; 
+    background-color:#979998; 
     width:100%;
     margin:10px;
    display: flex;
-   background-image:url()
    
+  
 ` 
 
 const DivProject = styled.div`

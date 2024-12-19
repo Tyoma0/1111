@@ -22,7 +22,7 @@ return(
     </SocialItem>
     <SocialItem>
           <SocialLink>
-            <a href="">  <Icon iconId='LinkedIn'/></a>
+            <a href="">  <Icon iconId='Instagram'/></a>
                       
          </SocialLink>
     </SocialItem>
@@ -34,7 +34,7 @@ return(
     </SocialItem>
     <SocialItem>
           <SocialLink>
-            <a href=""><Icon iconId='Instagram'/></a>
+            <a href=""><Icon iconId='LinkedIn'/></a>
                       
          </SocialLink>
     </SocialItem>

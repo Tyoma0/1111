@@ -44,5 +44,4 @@ text-underline-position: 'from-font';
 text-decoration-skip-ink: none;
 color:#2D2C2C
 
-
 `

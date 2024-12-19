@@ -13,7 +13,10 @@ const  items = ['Projects','About','Digital Assets','Let’s Talk']
         <StyledHeader>
             <Container>
                 <FlexWrapper justify="space-between" align="center">
-                <Logo/>
+                    
+                    <Logo />
+                    
+               
                 <HeaderMenu menuItems={items}/>
                 </FlexWrapper>
             
@@ -22,6 +25,9 @@ const  items = ['Projects','About','Digital Assets','Let’s Talk']
         </StyledHeader>
     );
 };
+
+
+
 
 const StyledHeader = styled.header`
 
