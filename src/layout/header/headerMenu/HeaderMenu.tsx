@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import  {theme}  from '../../../styles/Treme';
 
 
 
@@ -7,7 +8,6 @@ import styled from 'styled-components';
 
  export const HeaderMenu = (props: {menuItems: Array<string>}) => {
     return (
-        <div>
            <StyledHeaderMenu>
     <ul>
 {props.menuItems.map((item,index)=>{
@@ -19,16 +19,22 @@ import styled from 'styled-components';
 })}
     </ul>
 </StyledHeaderMenu> 
-        </div>
+        
     );
 };
 
 const  StyledHeaderMenu = styled.nav`
     ul{
         display: flex;
-        gap:30px;
-        
+        gap:30px; 
+         justify-content:center; 
     }
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
+        
+    
 `
 const ListItem = styled.li`
  

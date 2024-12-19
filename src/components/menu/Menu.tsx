@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
  export const Menu = (props: {menuItems: Array<string>}) => {
     return (
-        <div>
+        
            <StylenMenu>
     <ul>
 {props.menuItems.map((item,index)=>{
@@ -17,7 +17,7 @@ import styled from 'styled-components';
 })}
     </ul>
 </StylenMenu> 
-        </div>
+       
     );
 };
 
@@ -27,7 +27,10 @@ const  StylenMenu = styled.nav`
         gap:30px;
         
     }
-    a{
-        color:#000000
+     a{
+        color:black
     }
+    
+    
+      
 `

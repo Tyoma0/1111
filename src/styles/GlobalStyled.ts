@@ -20,43 +20,41 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header nav{
+ header nav{
 height:48px;
 display: flex;
 align-items:center
-}
-a{
+} 
+ a{
  text-decoration:none;
  font-family: 'Epilogue';
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 text-align: left;
+} 
 
-
-}
-
-nav{
+ nav{
   color:${theme.color.accent}
-}
+} 
 
 
 
-header li:last-child{
-  /* background-color:#2D2C2C; */
+  header li:last-child{
+  background-color:#2D2C2C;
  border-radius:2px;
  transition: transform 0.5s ease-in-out;
  
 
-}
-header li:last-child:hover{
+}  
+ header li:last-child:hover{
   transform:scale(1.1);
   
 }
 
 ul{
     list-style-type: none;
-}
+} 
 
 button{
     background-color:unset;
@@ -69,9 +67,9 @@ section{
 
 
 section:nth-of-type(odd){
-  background-color:${theme.color.primaryBg};
-  color:${theme.color.font};
-  
+   background-color:${theme.color.primaryBg};
+  color:${theme.color.font}; 
+   
 }
 
 

@@ -32,11 +32,4 @@ const  items = ['Projects','About','Digital Assets','Let’s Talk']
 const StyledHeader = styled.header`
 
 padding:20px 0;
-position:fixed;
-top:0;
-left: 0;
-right: 0;
-z-index:99999;
-margin-left:232px;
-margin-right:232px
 `

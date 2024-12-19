@@ -13,8 +13,11 @@ import { Container } from '../../../components/Container';
             <BigText>HELLO <br/>I’M Tyoma</BigText>
             <Name>A Frontend Developer In Belarus</Name>
             </Me>  
+            <DivFon>
             <Kub></Kub>
             <Photo src={photo} alt="" />
+            </DivFon>
+            
           </FlexWrapper>
             </Container>         
            
@@ -22,6 +25,13 @@ import { Container } from '../../../components/Container';
     );
 };
 
+const DivFon = styled.div`
+    
+    height:100vh;
+    display: flex;
+    align-items:center;
+    justify-content:center
+`
 
 const Me = styled.div`
 position:relative;
@@ -43,6 +53,7 @@ left:990px;
 
 width:570px;
 height:570px;
+
 transform:rotate(-8.7deg);
 
 position:absolute;
