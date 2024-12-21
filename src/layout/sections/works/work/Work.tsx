@@ -38,7 +38,7 @@ export const Work = (props:WorkPropsType) => {
           <StyledDialog  id='overlayMenu'ref={overlayMenuRef}>
             <Styleform method='dialog'>                   
                 <DialogContent>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit, obcaecati expedita dolorum quia asperiores sapiente harum eveniet cum! Velit maxime, nemo qui molestiae quo nesciunt deserunt sit? Placeat, sapiente!Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores nemo totam repudiandae quas, molestias accusantium quo sit, impedit magni saepe quis doloremque modi cupiditate optio earum obcaecati aspernatur iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere voluptas minima deserunt pariatur libero, error assumenda officia hic quibusdam dolorem quidem necessitatibus asperiores incidunt animi quasi! Fuga, ratione amet.</p>
+                    <p> Lorem ipsum dolor  expedita dolorum quia asperiores sapiente harum eveniet cum! Velit maxime, nemo qui molestiae quo nesciunt deserunt sit? Placeat, sapiente!Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque asperiores nemo totam repudiandae quas, molestias accusantium quo sit, impedit magni saepe quis doloremque modi cupiditate optio earum obcaecati aspernatur iusto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere voluptas minima deserunt pariatur libero, error assumenda officia hic quibusdam dolorem quidem necessitatibus asperiores incidunt animi quasi! Fuga, ratione amet.</p>
                     <CloseButton  type='submit' >close</CloseButton>
                 </DialogContent>
             </Styleform>                   
@@ -65,7 +65,7 @@ text-align: left;
 
 `
 const DivName = styled.div`
-    padding:92px 81px 153px 46px;
+    padding:92px 81px 153px 45px;
     display: flex;
     flex-direction:column;
     min-width:433px;
