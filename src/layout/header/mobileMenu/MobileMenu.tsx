@@ -79,8 +79,8 @@ span{
     height:1px;
     background-color:${theme.color.accent};
 position: absolute;
-left:15px;
-bottom:7.5px;
+bottom:1px;
+right:30px;
 
 ${props =>props.isOpen && css<{isOpen:boolean}>`
 background-color:rgba(255, 255, 255, 0);
