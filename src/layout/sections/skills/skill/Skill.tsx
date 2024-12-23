@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../../../styles/Treme';
+import { font } from '../../../../styles/Common';
 
 
 type SkillPropsType = {
@@ -30,19 +32,25 @@ font-family: 'Epilogue';
 font-size: 70px;
 font-weight: 100;
 line-height: 71.75px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+padding-right:25px
 
 `
 
 const StyledSkill =  styled.div`
-    width:33%;
+    width:440px;
     background-color:#131212;
     margin:2px;
     display: flex;
-    padding-bottom:51px
+    padding-bottom:51px;
 
+@media ${theme.media.mobile}{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+   
+    
+}
+    
 
 
 `
@@ -51,8 +59,9 @@ const SkillTitle =  styled.h3`
   font-family: 'Epilogue';
 font-size: 30px;
 font-weight: 300;
-line-height: 30.75px;
-text-align: left;
+
+/* ${font({family:'Epilogue',weight:300,Fmax:30,Fmin:25})} */
+
 
 
 `

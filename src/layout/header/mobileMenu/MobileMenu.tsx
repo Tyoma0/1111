@@ -67,7 +67,7 @@ ${props =>props.isOpen && css<{isOpen:boolean}>`
 
 
 const BurgerButton = styled.button<{isOpen:boolean}>`
-position: fixed;
+position: absolute;
 
 width:24px;
 height:24px;

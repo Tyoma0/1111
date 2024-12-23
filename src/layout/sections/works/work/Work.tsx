@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useRef } from 'react';
+import { theme } from '../../../../styles/Treme';
+import Foto from './../../../../assets/images/image 5.png'
 
 type WorkPropsType = {
 title:string
@@ -24,6 +26,7 @@ export const Work = (props:WorkPropsType) => {
     };
     return (
         <StyledWork>
+            <Image src={Foto}/>
             <DivName>
                 <SpanTitle>{props.minInfo}</SpanTitle>
                 <SpanName>{props.name}</SpanName>
@@ -53,7 +56,12 @@ export const Work = (props:WorkPropsType) => {
     );
 };
 
-
+const Image = styled.img`
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:absolute
+`
 
 const SpanName  = styled.span`
     font-family: 'Epilogue';
@@ -70,21 +78,30 @@ const DivName = styled.div`
     flex-direction:column;
     min-width:433px;
     min-height:215px;
-    
+    z-index:999
 `
 const StyledWork =  styled.div`
-    background-color:#979998; 
+ background-color:#979998;  
+    position:relative;
+    height:100%;
+    min-height:447px;
     width:100%;
-    margin:10px;
    display: flex;
-   
-  
+   margin-bottom:78px;
+
+
+
+   @media ${theme.media.mobile}{
+    display: flex;
+    flex-direction:column
+   }
 ` 
 
 const DivProject = styled.div`
     padding:132px 47px 100px 0;
     min-width:433px;
-    min-height:215px
+    min-height:215px;
+    z-index:9999
 `
 const SpanTitle = styled.span`
     font-family: 'Epilogue';

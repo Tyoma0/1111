@@ -3,12 +3,15 @@ import styled from 'styled-components';
 import { Menu } from '../../components/menu/Menu';
 import { Button } from '../../components/Buttom';
 import { Container } from '../../components/Container';
+import { FlexWrapper } from '../../components/FlexWrapper'
 const itemContact = ['Projects','About','Digital Assets']
 
 export const Contact = () => {
     return (
         <StyleContact>
             <Container>
+                
+
                 <DivContact>
                 <Menu menuItems={itemContact}></Menu> 
            <StyledForm>

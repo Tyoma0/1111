@@ -3,21 +3,19 @@ import styled from 'styled-components';
 import photo from '..//../../assets/images/i.webp'
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
+import { theme } from '../../../styles/Treme';
+import { font } from '../../../styles/Common';
 
  export const Main = () => {
     return (
         <StyledMain> 
             <Container>
-            <FlexWrapper align='center' justify='space-between'>
+            <FlexWrapper align='center' justify='center' wrap='wrap'>
             <Me>
             <BigText>HELLO <br/>I’M Tyoma</BigText>
             <Name>A Frontend Developer In Belarus</Name>
-            </Me>  
-            <DivFon>
-            <Kub></Kub>
-            <Photo src={photo} alt="" />
-            </DivFon>
-            
+            </Me>             
+            <Photo src={photo} alt="" />           
           </FlexWrapper>
             </Container>         
            
@@ -25,13 +23,7 @@ import { Container } from '../../../components/Container';
     );
 };
 
-const DivFon = styled.div`
-    
-    height:100vh;
-    display: flex;
-    align-items:center;
-    justify-content:center
-`
+
 
 const Me = styled.div`
 position:relative;
@@ -39,37 +31,30 @@ z-index:1;
 `
 
 const StyledMain  = styled.div`
-    min-height:100vh;
+    min-height:100%;
     background-color:#FFFFFF;
     display: flex;
     
 
 `
-const Kub = styled.div`
 
-background-color:#E7E7E7;
-right:90px;
-left:990px;
-
-width:570px;
-height:570px;
-
-transform:rotate(-8.7deg);
-
-position:absolute;
-
-
-`
 
 
 const  Photo= styled.img`
-position:absolute;
-right:90px;
-left:990px;    
 width:570px;
 height:570px;
 transform:rotate(8.7deg);
+object-fit:cover;
+margin-top:106px;
+margin:106px 20px;
 
+
+@media ${theme.media.mobile}{
+    width:300px;
+    height:300px;
+   
+}
+    
 
 
 
@@ -77,19 +62,14 @@ transform:rotate(8.7deg);
 
 `
 const BigText = styled.span`
-width: 651px;
-height: 352px;
-top: 222px;
-left: 189px;
-gap: 0px;
-opacity: 0px;
-font-family: 'Epilogue';
+ ${font({family:'Epilogue',weight:800,Fmax:150,Fmin:75,})}; 
+/* font-family: 'Epilogue';
 font-size: 150px;
-font-weight: 800;
-line-height: 176.25px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+font-weight: 800; */
+@media  ${theme.media.mobile}{
+    
+}
+  
 
 `
 const Name = styled.h1`

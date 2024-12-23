@@ -13,9 +13,9 @@ export const Works = () => {
             <WorkTitle>MY<br/> PROJECTS</WorkTitle>
             <FlexWrapper wrap='wrap'  >
                 
-                <Work  minInfo='Mental Health' name='A Case Study_ '  title=' Find Peace in Meditation' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.' />
-                <Work  minInfo='Fashion Show' name='A Case Study_ '  title=' Find Peace in Meditation' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.' />
-                <Work  minInfo='Barbeque' name='A Case Study_ '  title=' Find Peace in Meditation' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.' /> 
+                <Work   minInfo='Mental Health' name='A Case Study_ '  title=' Find Peace in Meditation' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.' />               
+                <Work   minInfo='Fashion Show' name='A Case Study_ '  title=' Find Peace in Meditation' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.' />
+                <Work   minInfo='Barbeque' name='A Case Study_ '  title=' Find Peace in Meditation' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.' /> 
                 
             </FlexWrapper>
             </Container>
