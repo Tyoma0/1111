@@ -98,8 +98,7 @@ const TitleForm  = styled.legend`
 font-size: 16px;
 font-weight: 700;
 line-height: 24px;
-text-align: left;
-text-decoration-skip-ink: none;
+
 padding-bottom:16px;
 
 `
@@ -116,8 +115,14 @@ font-family: 'Roboto';
 font-size: 12px;
 font-weight: 400;
 line-height: 18px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+
+
+
+@media ${theme.media.mobile}{
+    padding:0 0 32px 0
+}
+    
+
+
 
 `

@@ -147,24 +147,11 @@ font-size: 18px;
 font-weight: 400;
 line-height: 27px;
 margin-bottom:24px;
-width: 433px;
-height: 135px;
-gap: 0px;
-opacity: 0px;
+min-width: 433px;
+min-height: 135px;
 
  
-`
-
-
-
-
-
-  
-
-   
-  
-  
-  
+`   
 const StyledDialog = styled.dialog`
 border:none;
 background-color:#979998b2;

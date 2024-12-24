@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../../styles/Treme';
 
 
 type AboutPropsType = {
@@ -20,8 +21,22 @@ export const About = (props:AboutPropsType) => {
 
 
 
-const AboutDiv  = styled.div``
-const Image = styled.img``
+const AboutDiv  = styled.div`
+@media ${theme.media.mobile}{
+   display: flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center
+   
+}
+`
+const Image = styled.img`
+@media ${theme.media.mobile}{
+    width:276px;
+    height:258px;
+   
+}
+`
 const Description = styled.p`
 width: 437px;
 height: 540px;

@@ -37,10 +37,12 @@ padding-right:25px
 `
 
 const StyledSkill =  styled.div`
-    width:440px;
+    width:490px;
     background-color:#131212;
-    margin:2px;
+    margin:20px;
     display: flex;
+   
+   
     padding-bottom:51px;
 
 @media ${theme.media.mobile}{
