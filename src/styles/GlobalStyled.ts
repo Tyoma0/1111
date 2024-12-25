@@ -40,14 +40,14 @@ text-align: left;
 
 
 
-  header li:last-child{
-  background-color:#2D2C2C;
+  header li{
+  /* background-color:#2D2C2C; */
  border-radius:2px;
  transition: transform 0.5s ease-in-out;
  
 
 }  
- header li:last-child:hover{
+ header li:hover{
   transform:scale(1.1);
   
 }

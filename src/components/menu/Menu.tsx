@@ -22,15 +22,18 @@ import styled from 'styled-components';
 };
 
 const  StylenMenu = styled.nav`
-    ul{
+    
+  ul{
         display: flex;
         gap:30px;
         
     }
      a{
-        color:black
+        color:black;
+        text-shadow: 1px 3px 5px #00000067;
     }
     
     
       
 `
+ 

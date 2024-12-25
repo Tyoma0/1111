@@ -75,5 +75,5 @@ const SocialLink = styled.a`
 `
 
 const CopyRight =styled.small`
-    
+text-shadow: 1px 3px 5px #00000067;
 `
