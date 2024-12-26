@@ -65,7 +65,7 @@ const StyletFooter =styled.footer`
     `
 const SocialList =styled.ul`
     display: flex;
-    margin-top:20px
+    margin-top:19px
 `
 const SocialItem =styled.li`
     
